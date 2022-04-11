@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
 <body>
@@ -21,7 +23,7 @@
     <script>
 
         // Login e senha do usuário
-        const loginUsuario = 'marcos';
+        const loginUsuario = 'joca';
         const loginSenha = '1234';
 
         // Quando clicar em 'id="enviar"'
@@ -33,29 +35,30 @@
             // Ler o valor da 'Senha'  digitada
             var formSenha = senha.value;
 
-            // Teste se usuário e senha estão corretos
-            
+            // Testa se usuário e senha estão corretos
             if (
-        
-            // Primeira expressão
-            
-            
-            
-            // Segunda expressão
-                formUsuario == loginUsuario 
+                // Primeira expressão
+                formUsuario == loginUsuario //true
+
+                // AND
+                &&
+
+                // Segunda expressão
+                formSenha == loginSenha //true
             ) {
-                consele.log('usuario ok.')
+
+                // Escreve na caixa de mensagem
+                mensagem.innerHTML = "Olá " + formUsuario + "! Seja bem-vindo!";
 
             } else {
-                console.error('ooooops!');
+
+                // Escreve na caixa de mensagem
+                mensagem.innerHTML = "Ooops! Algo errado não deu certo!";
             }
 
-
-
-        
-        
             // Não faça mais nada.
             return false;
+
         }
          
          </script>
